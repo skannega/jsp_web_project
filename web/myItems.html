@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Jewel Swap</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./resources/css/main.css">
+    </head>
+    <body>
+       <div id="page-header">
+            <div id="image" class="header-align">
+                <img src="./resources/images/ninericon.jpg" alt="Bike" height=130  width= 130 class ="icon"> 
+            </div>
+            <div id="title" class="header-align">
+                <h2>Niner Jewelry Swap Inc</h2>
+            </div>
+            <div id="name-wrapper" class="header-align">
+                <div id="login-name">
+                    <input type="text" name="fname" placeholder="Hello, Sonika">
+                </div>
+                <div id="bread-crumb">
+                    <ul class="breadcrumb"><li><a href="index.html">Home</a></li>
+                        <li><a href="myItems.html">My Collection</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+        <div id="page-navigator">
+            <nav class="navbar navbar-default center" role="navigation">
+                <ul>
+                    <li><a class="active" href="#login">Sign In</a></li>
+                    <li><a href="./myItems.html">My Collection</a></li>
+                    <li><a href="#swaps">My Swaps</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="page-content">
+            <div id="general-nav" class="sidenav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./categories.html">Categories</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div id="page-body">
+                <!--Write matter here.-->
+                <h2>My Collection for swapping:<br></h2>
+                <br>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Jewelry Item</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">My Rating</th>
+                            <th scope="col">Swapped</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="./jewel_item.html">Fish hook</a></th>
+                            <td>Earrings</td>
+                            <td>
+                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                            </td>
+                            <td>
+                                <button class="swap" type="button">⇋</button>
+                            </td>
+                            <td>     
+                                <a href="./jewel_item.html"><input type="button" value="Update" /></a>
+                                <a href="./myItems.html"><input type="button" value="Delete" /></a>
+                            </td>
+                        <tr>
+                            <th scope="row"><a href="./jewel_item.html">Coral Omega</a></th>
+                            <td>Chain</td>
+                            <td>
+                                <span>☆</span><span>☆</span><span>☆</span>
+                            </td>
+                            <td>
+                                <button class="swap" type="button">✓</button>
+                            </td>
+                            <td>                             
+                                <a href="./jewel_item.html"><input type="button" value="Update" /></a>
+                                <a href="./myItems.html"><input type="button" value="Delete" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="./jewel_item.html">Cuff Style</a></th>
+                            <td>Bracelet</td>
+                            <td><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+
+                            </td> 
+                            <td>
+                                <button class="swap" type="button" >✓</button>
+                            </td>
+                            <td>     
+                                <a href="./jewel_item.html"><input type="button" value="Update" /></a>
+                                <a href="./myItems.html"><input type="button" value="Delete" /></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br>
+                Legend  - ✓ Implies Swapped   ⇋ - Implies offer available
+            </div>
+        </div>
+        <div id="page-footer">
+            <h5> Copyright © 2018 Niner-Jewelry Swap Inc. All rights reserved.</h5>
+        </div>
+    </body>
+</html>

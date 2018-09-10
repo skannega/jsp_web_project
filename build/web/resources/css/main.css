@@ -7,22 +7,76 @@ and open the template in the editor.
     Created on : Sep 8, 2018, 11:58:50 PM
     Author     : sonika
 */
-
+/*
+*/
 html, body {
     width       : 100%;
     height      : 100%;
     margin      : 0 0 0 0;
     font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 
-/*Style settings for the navigation bar.*/
+
+/*Style settings for header of the page: */
+
 #page-header {
     width: 100%;
     height: 15%;
-    background-color: azure;
-    text-align: center;
+    background-color: 	#ff8000 ;
+    display: table;
+    text-align: left;
+    font-size:30px;  
 }
 
+#image h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-align {
+    display: table-cell;
+    vertical-align: top; /* add vertical align top to fix this issue */
+    padding: 0px;
+}
+
+#login-name {
+    text-align: right;
+}
+
+#login-name input {
+    margin-right: 20px;
+}
+
+/*Styling for Breadcrumb:*/
+ul.breadcrumb {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 13px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/*Style settings for user specific navigation: */
 
 #page-navigator ul {
     list-style-type: none;
@@ -52,23 +106,18 @@ html, body {
     background-color: #4CAF50;
 }
 
-/*#page-navigator .navbar.center .navbar-inner {
-    text-align: center;
-}
 
-#page-navigator .navbar.center .navbar-inner .nav {
-    display:inline-block;
-    float: none;
-}*/
+/*Style settings for page content: */
 
-/*Style settings for page .*/
 #page-content {
-    //overflow: hidden;
+
     width: 100%;
-    height: 72%;
+    height: 70%;
     display: flex;
-    background: grey;
+    background: #D0D0D0;
 }
+
+/*Style settings for general site navigation: */
 
 #general-nav {
     height: auto;
@@ -110,15 +159,47 @@ html, body {
     margin-left: 50px;
 }
 
-/*@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}*/
+/*Styling for main body content:*/
+
+#page-body{    
+    padding:30px;
+    width:50%;   
+}
+#page-body1{
+
+    padding:30px;
+    width:80%;   
+}
+
+/*Styling for tabular content:*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/*Styling for buttons:*/
+
+.swap{
+    border-radius: 50%;
+    background-color: lightgreen;
+}
+.button{
+    background-color: sandybrown
+}
+
+/*Styling for footer of the page:*/
 
 #page-footer {
     width: 100%;
-    height: 5%;
-    background-color: darksalmonazure;
-    text-align: center;
-    bottom: 10%;
+    height: 15%;
+    text-align: bottom;
+    padding-left: 1em;
 }
+
